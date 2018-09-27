@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/recy1"
+        android:layout_toLeftOf="@+id/lab"
+        android:background="@color/md_grey_100"
+        android:layout_marginTop="80dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/logoimg"
+        android:src="@drawable/fulllogo"
+        android:paddingTop="3dp"
+        android:background="@color/md_grey_100"
+        android:layout_alignParentRight="true"/>
+        <TextView
+            android:background="@color/md_grey_100"
+
+            android:layout_below="@+id/totmem"
+            android:id="@+id/lab"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="Member"
+            android:textSize="9dp"
+            android:gravity="center_horizontal|top"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:background="@color/md_grey_100"
+
+        android:id="@+id/totmem"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="55"
+        android:textSize="25dp"
+        android:gravity="center_horizontal|top"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/logoimg"
+        android:layout_alignParentRight="true"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recy"
+        android:layout_above="@+id/chat"
+        android:layout_below="@+id/recy1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chat">
+        <EditText
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:minLines="2"
+            android:textColor="@color/black_off"
+            android:hint="Write something.."
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/butnclick_primery2"
+            android:layout_toLeftOf="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etmsg"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnsend"
+            android:padding="10dp"
+            android:background="@drawable/butnclick_primery1"
+            android:src="@drawable/ic_send_black_24dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
